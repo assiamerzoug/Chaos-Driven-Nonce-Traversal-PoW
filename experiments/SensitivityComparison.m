@@ -2,6 +2,8 @@ clear;
 clc;
 close all;
 
+addpath('../src/analysis');
+
 mu=2;
 k=0.05;
 
