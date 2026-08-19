@@ -19,3 +19,4 @@ md = java.security.MessageDigest.getInstance('SHA-256');
 md.update(data);
 
 hash = typecast(md.digest,'uint8');
+end
