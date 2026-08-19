@@ -2,6 +2,8 @@ clear;
 clc;
 close all;
 
+addpath('../src/analysis');
+
 x0 = 0.321;
 
 N = 1500;
@@ -20,7 +22,6 @@ for j = 1:length(mu)
 
     x = x0;
 
-    % Remove transient
     for i = 1:Transient
 
         x = TentModified(x,mu(j),k);
