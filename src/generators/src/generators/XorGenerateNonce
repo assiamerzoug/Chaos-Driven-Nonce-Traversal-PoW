@@ -1,0 +1,15 @@
+function nonce = XorGenerateNonce(N,seed)
+
+x = uint32(seed);
+
+nonce=zeros(N,1,'uint32');
+
+for i=1:N
+
+x=bitxor(x,bitshift(x,13));
+x=bitxor(x,bitshift(x,-17));
+x=bitxor(x,bitshift(x,5));
+
+nonce(i)=x;
+
+end
