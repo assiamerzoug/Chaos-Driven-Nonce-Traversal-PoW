@@ -2,6 +2,8 @@ clear;
 clc;
 close all;
 
+addpath('../src/analysis');
+
 N = 50000;
 
 InitialConditions = linspace(0.01,0.99,100);
