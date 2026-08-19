@@ -70,5 +70,3 @@ Result.SuccessNonce        = Nonce;
 Result.SuccessHash         = Hash;
 
 Result.NonceSequence       = NonceSequence;
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
