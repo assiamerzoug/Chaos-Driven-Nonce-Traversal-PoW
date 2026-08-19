@@ -1,21 +1,23 @@
-function nonce=ModifiedTentGenerateNonce(N,x0)
+function [Nonce,State] = ModifiedTentNonce(State)
 
-mu=1.99;
+if isempty(State)
 
-k=0.05;
-
-x=x0;
-
-
-
-nonce = zeros(1,N,'uint32');
-
-for i=1:N
-
-    x = TentModified(x,mu,k);
-
-    nonce(i)=uint32(floor((2^32)*x));
+    State = 0.123456789;
 
 end
 
+mu = 1.99;
+
+k = 0.05;
+
+if State < 0.5
+
+    State = mod(mu*(State+k),1);
+
+else
+
+    State = mod(mu*(1-State+k),1);
+
 end
+
+Nonce = uint32(floor(State*2^32));
