@@ -2,6 +2,9 @@ clear;
 clc;
 close all;
 
+addpath('../src/generators');
+addpath('../src/mining');
+
 Parameters.Difficulty = 8;
 
 Parameters.MaxNonce = 1000000;
