@@ -48,8 +48,7 @@ xlabel('\mu','FontSize',12,'FontWeight','bold');
 
 ylabel('State Variable x_n','FontSize',12,'FontWeight','bold');
 
-%%title('Bifurcation Diagram of the Classical Tent Map',...
-     %% 'FontSize',13,'FontWeight','bold');
+title('Bifurcation Diagram of the Classical Tent Map',...'FontSize',13,'FontWeight','bold');
 
 axis([1 2 0 1]);
 
