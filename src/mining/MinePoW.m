@@ -15,6 +15,8 @@ HashingTime = 0;
 
 Found = 0;
 
+TotalTimer = tic;
+
 while Hashes < MaxNonce
 
     t = tic;
