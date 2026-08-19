@@ -1,0 +1,21 @@
+function nonce=ModifiedTentGenerateNonce(N,x0)
+
+mu=1.99;
+
+k=0.05;
+
+x=x0;
+
+
+
+nonce = zeros(1,N,'uint32');
+
+for i=1:N
+
+    x = TentModified(x,mu,k);
+
+    nonce(i)=uint32(floor((2^32)*x));
+
+end
+
+end
